@@ -12,8 +12,8 @@ let GetDef (variable :string[] ) (number : int)  defaultValue = match variable w
 [<EntryPoint>]
 let main argv = 
     if(argv.Length = 0) then
-        printfn "Usage: \n \t<app.exe> <pdf file path> <numering format with number 0 ex. \"_{0:##}\"> \n\n"
-    
+        printfn "Usage: \n \t<app.exe> <pdf file path> <numering format with sign 0 ex. \"_{0:##}\"> \n\n"
+            
     let pdfFileName = GetDef argv 0  "sample.pdf"
     let formatNum = GetDef  argv 1  "_{0:000}"
     
